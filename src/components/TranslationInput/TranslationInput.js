@@ -7,7 +7,7 @@ const TranslationInput = (props) => (
     <FormGroup
       controlId="formControlsTextarea"
       validationState={props.validation}>
-      <ControlLabel>Unicode runic translator</ControlLabel>
+      <ControlLabel>Runic Unicode translator</ControlLabel>
       <FormControl
         componentClass="textarea"
         value={props.value}
