@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './Translation.css';
-import TranslationWell from './TranslationWell'
-import TranslationInput from './TranslationInput'
-import { runeMap } from './RuneMap';
+import TranslationWell from '../TranslationWell/TranslationWell'
+import TranslationInput from '../TranslationInput/TranslationInput'
+import { runeMap } from '../../RuneMap';
 
 class Translation extends Component {
   constructor(props, context) {

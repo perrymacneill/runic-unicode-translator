@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Translation from './Translation';
+import Translation from '../Translation/Translation';
 
 class App extends Component {
   constructor(props, context) {
