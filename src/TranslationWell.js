@@ -1,14 +1,11 @@
 import React from 'react';
 import { Fade, Well } from 'react-bootstrap';
+import './TranslationWell.css';
 
 const TranslationWell = (props) => (
-  <Fade in={props.open} id="translation-well">
-    <div>
-      <Well>
-        <h2>{props.content}</h2>
-      </Well>
-    </div>
-  </Fade>
+  <Well id="translation-well">
+    <h2>{props.content}</h2>
+  </Well>
 )
 
 

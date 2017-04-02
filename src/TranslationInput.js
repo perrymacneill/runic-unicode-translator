@@ -4,16 +4,16 @@ import { FormGroup, ControlLabel, FormControl, HelpBlock } from 'react-bootstrap
 const TranslationInput = (props) => (
   <form id="translate-form">
     <FormGroup
-      controlId="formBasicText"
+      controlId="formControlsTextarea"
       validationState={props.validation}>
       <ControlLabel>Unicode runic translator</ControlLabel>
       <FormControl
-        type="text"
+        componentClass="textarea"
         value={props.value}
         placeholder="Enter text"
         onChange={(e) => props.handleChange(e)} />
       <FormControl.Feedback />
-      <HelpBlock>Start typing and your text will be translated in unicode runes.</HelpBlock>
+      <HelpBlock>Start typing and your text will be translated into unicode runes.</HelpBlock>
     </FormGroup>
   </form>
 )
