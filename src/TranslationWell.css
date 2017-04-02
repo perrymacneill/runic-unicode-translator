@@ -1,4 +1,6 @@
 #translation-well {
-  width: 28em;
+  width: 50em;
   word-wrap: break-word;
+  flex: 1;
+  overflow-y: scroll;
 }

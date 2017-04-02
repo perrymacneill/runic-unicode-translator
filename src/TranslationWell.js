@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fade, Well } from 'react-bootstrap';
+import { Well } from 'react-bootstrap';
 import './TranslationWell.css';
 
 const TranslationWell = (props) => (

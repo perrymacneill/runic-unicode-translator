@@ -10,7 +10,6 @@ const TranslationInput = (props) => (
       <ControlLabel>Unicode runic translator</ControlLabel>
       <FormControl
         componentClass="textarea"
-        id="translation-input"
         value={props.value}
         placeholder="Enter text"
         onChange={(e) => props.handleChange(e)} />

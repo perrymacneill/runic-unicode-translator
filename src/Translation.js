@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './Translation.css';
 import TranslationWell from './TranslationWell'
 import TranslationInput from './TranslationInput'
 import { runeMap } from './RuneMap';
