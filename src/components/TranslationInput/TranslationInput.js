@@ -13,7 +13,6 @@ const TranslationInput = (props) => (
         value={props.value}
         placeholder="Enter text"
         onChange={(e) => props.handleChange(e)} />
-      <FormControl.Feedback />
       <HelpBlock>Start typing and your text will be translated into unicode runes.</HelpBlock>
     </FormGroup>
   </form>
