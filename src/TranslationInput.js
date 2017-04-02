@@ -1,5 +1,6 @@
 import React from 'react';
 import { FormGroup, ControlLabel, FormControl, HelpBlock } from 'react-bootstrap';
+import './TranslationInput.css'
 
 const TranslationInput = (props) => (
   <form id="translate-form">
@@ -9,6 +10,7 @@ const TranslationInput = (props) => (
       <ControlLabel>Unicode runic translator</ControlLabel>
       <FormControl
         componentClass="textarea"
+        id="translation-input"
         value={props.value}
         placeholder="Enter text"
         onChange={(e) => props.handleChange(e)} />
