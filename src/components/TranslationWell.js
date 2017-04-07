@@ -1,6 +1,6 @@
 import React from 'react';
 import { Well } from 'react-bootstrap';
-import './TranslationWell.css';
+import '../App.css';
 
 const TranslationWell = (props) => (
   <Well id="translation-well">

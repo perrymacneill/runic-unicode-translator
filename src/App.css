@@ -1,0 +1,24 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}
+
+#translate-form textarea {
+  width: 100%;
+  resize: vertical;
+  flex: 1;
+}
+
+#translate-form {
+  width: 100%;
+}
+
+#translation-well {
+  width: 100%;
+  word-wrap: break-word;
+  flex: 1;
+  overflow-y: scroll;
+}

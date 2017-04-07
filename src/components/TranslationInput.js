@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormGroup, ControlLabel, FormControl, HelpBlock } from 'react-bootstrap';
-import './TranslationInput.css'
+import '../App.css'
 
 const TranslationInput = (props) => (
   <form id="translate-form">
