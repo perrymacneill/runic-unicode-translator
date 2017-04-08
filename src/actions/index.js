@@ -27,16 +27,16 @@ export const setTranslation = (value, spacing, runes) => {
 
   if(runes === 'younger') {
     characters = Object.assign({}, younger, {' ' : spacing});
-    values = value.replace(/th/g, 'ᚦ').replace(/ng/g, 'ᚴ').split('');
+    values = value.toLowerCase().replace(/th/g, 'ᚦ').replace(/ng/g, 'ᚴ').split('');
   } else if(runes === 'anglo') {
     characters = Object.assign({}, anglo, {' ' : spacing});
-    values = value.replace(/th/g, 'ᚦ').replace(/ng/g, 'ᛝ').split('');
+    values = value.toLowerCase().replace(/th/g, 'ᚦ').replace(/ng/g, 'ᛝ').split('');
   } else {
     characters = Object.assign({}, elder, {' ' : spacing});
-    values = value.replace(/th/g, 'ᚦ').replace(/ng/g, 'ᛜ').split('');
+    values = value.toLowerCase().replace(/th/g, 'ᚦ').replace(/ng/g, 'ᛜ').split('');
   }
 
-  const translation = values.map(letter => characters[letter].toLowerCase()).join('');
+  const translation = values.map(letter => characters[letter]).join('');
 
   return {
     type: 'SET_TRANSLATION',
