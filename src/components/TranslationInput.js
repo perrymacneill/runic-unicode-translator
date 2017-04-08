@@ -1,27 +1,26 @@
-import React from 'react';
-import { FormGroup, ControlLabel, FormControl, HelpBlock } from 'react-bootstrap';
-import '../App.css'
+import { connect } from 'react-redux'
+import { setTranslation, setValue } from '../actions/index.js'
+import Input from './Input'
 
-const TranslationInput = (props) => (
-  <form id="translate-form">
-    <FormGroup
-      controlId="formControlsTextarea"
-      validationState={props.validation}>
-      <ControlLabel>Runic Unicode translator</ControlLabel>
-      <FormControl
-        componentClass="textarea"
-        value={props.value}
-        placeholder="Enter text"
-        onChange={(e) => props.handleChange(e)} />
-      <HelpBlock>Start typing and your text will be translated into unicode runes.</HelpBlock>
-    </FormGroup>
-  </form>
-)
+const mapStateToProps = (state) => {
+  return {
+    spacing: state.spacing,
+    runes: state.runes
+  }
+}
 
-TranslationInput.propTypes = {
-  validation: React.PropTypes.string,
-  value: React.PropTypes.string,
-  handleChange: React.PropTypes.func.isRequired
-};
+const mapDispatchToProps = (dispatch) => {
+  return {
+    handleChange: (e, spacing, runes) => {
+      dispatch(setValue(e.target.value))
+      dispatch(setTranslation(e.target.value, spacing, runes))
+    }
+  }
+}
+
+const TranslationInput = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Input)
 
 export default TranslationInput;
