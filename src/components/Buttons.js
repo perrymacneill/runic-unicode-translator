@@ -3,7 +3,7 @@ import { Button, ButtonGroup } from 'react-bootstrap';
 import { single, multiple, cross } from '../constants/RuneMap'
 import '../App.css'
 
-let Buttons = ({ value, spacing, runes, onSpacingClick, onRunesClick }) => (
+const Buttons = ({ value, spacing, runes, onSpacingClick, onRunesClick }) => (
   <div id="translation-buttons">
     <div>
       <ButtonGroup>
